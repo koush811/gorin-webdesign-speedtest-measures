@@ -1,0 +1,48 @@
+services:
+  apache-php:
+    build:
+      context: .
+      dockerfile: php/dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      TZ: Asia/Tokyo
+      DB_HOST: mariadb
+      DB_PORT: 3306
+      DB_DATABASE: app
+      DB_USERNAME: app
+      DB_PASSWORD: app
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - mariadb
+    restart: unless-stopped
+
+  mariadb:
+    image: mariadb:12.2.2
+    ports:
+      - "3306:3306"
+    environment:
+      TZ: Asia/Tokyo
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: app
+      MARIADB_USER: app
+      MARIADB_PASSWORD: app
+    volumes:
+      - ./data/mariadb:/var/lib/mysql
+    restart: unless-stopped
+
+  phpmyadmin:
+    image: phpmyadmin:5.2.3-apache
+    ports:
+      - "8081:80"
+    environment:
+      TZ: Asia/Tokyo
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: root
+      UPLOAD_LIMIT: 256M
+    depends_on:
+      - mariadb
+    restart: unless-stopped
