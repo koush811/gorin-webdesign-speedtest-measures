@@ -31,7 +31,7 @@ docker compose up -d --build
 
 ### 4. ブラウザで確認する
 
-- アプリ一覧: `http://localhost:8080`
+- アプリ一覧: `http://localhost:8000`
 - phpMyAdmin: `http://localhost:8081`
 
 ## DB接続情報

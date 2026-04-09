@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    gap: 50px;
+}
+
+.box{
+    width: 100px;
+    height: 250px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.line{
+    border: solid 2px blue;
+}
+
+button{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(0, 100, 255);
+}
+
+button:hover{
+
+    background-color: rgb(0, 150, 255);
+}

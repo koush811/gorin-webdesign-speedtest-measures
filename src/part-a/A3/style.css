@@ -48,4 +48,14 @@ body {
   transition: 0.3s;
 }
 
+
+
 /* この下に必要なスタイルを追記すること */
+
+.item-content{
+  max-height: 0px;
+}
+
+input:checked ~ .item-content{
+  max-height: 200px;
+}
