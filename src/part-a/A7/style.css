@@ -1,0 +1,36 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cir{
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: cir 10s linear infinite , spin 10s linear infinite;
+}
+
+@keyframes cir{
+    0%{
+        background: linear-gradient(red, orange, yellow);
+
+    }
+    50%{
+        background: linear-gradient(blue, rgb(0, 119, 255), aqua);
+    }
+    100%{
+        background: linear-gradient(red, orange, yellow);
+    }
+}
+
+@keyframes spin{
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+

@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bg: #ffffff;
+    --text: #000000;
+    --card-bg: #e4e4e4;
+    --card-border: #8b8b8b;
+}
+
 body{
     display: flex;
     gap: 50px;

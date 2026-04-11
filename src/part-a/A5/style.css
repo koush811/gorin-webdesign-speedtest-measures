@@ -1,0 +1,49 @@
+.list {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+}
+
+.list > li {
+  counter-increment: item;
+  position: relative;
+  padding-left: 30px;
+  margin: 10px;
+}
+
+.list > li::before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  width: 20px;
+  padding: 3px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #333;
+  color: #fff;
+}
+
+.list ol {
+  counter-reset: subitem;
+  list-style: none;
+}
+
+.list ol > li {
+  counter-increment: subitem;
+  position: relative;
+  padding-left: 30px;
+  margin: 10px;
+}
+
+.list ol > li::before {
+  content: counter(item) "-" counter(subitem);
+  position: absolute;
+  left: 0;
+  padding: 3px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #555;
+  color: #fff;
+}
