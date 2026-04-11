@@ -1,0 +1,64 @@
+.dev{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.content{
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    animation: fade 2s ;
+}
+
+.suc{
+    border: solid 2px green;
+    animation-delay: .1s;
+}
+
+.info{
+    border: solid 2px aqua;
+    animation-delay: .3s;
+}
+
+.war{
+    border: solid 2px yellow;
+    animation-delay: .5s;
+}
+
+.error{
+    border: solid 2px red;
+    animation-delay: .7s;
+}
+
+.lines{
+    position: absolute;
+    top: 10px;
+    right:5px;
+}
+
+.line{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(45deg);
+    transform: translate(-50% -50%);
+}
+
+.two{
+    transform: rotate(-45deg);
+}
+
+@keyframes fade{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+

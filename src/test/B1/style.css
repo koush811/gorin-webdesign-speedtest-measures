@@ -1,0 +1,29 @@
+.card{
+    width: 300px;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.one{
+    background-color: rgba(255, 0, 0, 0.281);
+}
+
+.two{
+    background-color: rgba(0, 0, 255, 0.342);
+}
+
+.three{
+    background-color: rgba(0, 128, 0, 0.295);
+}
+
+.four{
+    background-color: rgba(255, 255, 0, 0.295);
+}
+
+.five{
+    background-color: rgba(255, 166, 0, 0.322);
+}
+
+a{
+    max-height: 100px;
+}
