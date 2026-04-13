@@ -2,18 +2,22 @@
     position: relative;
 }
 
+input{
+    padding: 10px;
+}
+
 .field label{
-    left: 12px;
-    top: 14px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
     color: #6b7280;
     background: #fff;
-    padding: 0 4px;
     pointer-events: none;
     transition: 0.2s ease;
 }
 
 .field.active label{
-    top: -9px;
+    top: -10px;
     font-size: 12px;
     color: #1f6feb;
 }

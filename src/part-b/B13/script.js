@@ -13,12 +13,20 @@ const passError = document.getElementById('passError')
 const inputs = [nameInput,mailInput,passInput]
 
 function active(input){
-    fields.forEach(field => {
-        if (document.activeElement === input || input.value.trim() !== "") {
-        field.classList.add("active");
-      } else {
-        field.classList.remove("active");
-      }
+    fields.forEach((field)=>{
+        field.classList.remove("active")
+    })
+
+    const target = input.closest(".field")
+    if(target && (document.activeElement === input || input.value !== "")){
+        target.classList.add("active")
+    }
+
+    inputs.forEach(input => {
+        if(input.value !== ""){
+            const field = input.closest(".field")
+            if(field) field.classList.add("active")
+        }
     });
 }
 
@@ -26,7 +34,7 @@ function validatename(){
     if(nameInput.value === ""){
         nameError.textContent = "名前を入力してください"
     }else{
-        nameError.textContent === ""
+        nameError.textContent = ""
     }
 }
 
@@ -34,7 +42,7 @@ function validatepass(){
     if(passInput.value === ""){
         passError.textContent = "パスワードを入力してください"
     }else{
-        passError.textContent === ""
+        passError.textContent = ""
     }
 }
 
@@ -58,20 +66,25 @@ inputs.forEach(input => {
     input.addEventListener('input',()=>{
         active(input)
     })
+    input.addEventListener('blur',()=>{
+        active(input)
+    })
 });
 
 nameInput.addEventListener("blur", () => {
-    active(nameInput)
     validatename()
+    
 });
 mailInput.addEventListener("blur", () => {
-    active(mailInput)
     validateMail()
+    
 });
 passInput.addEventListener("blur", () => {
-    active(passInput)
     validatepass()
+    
 });
+
+
 
 togglebtn.addEventListener("click",()=>{
     if(togglebtn.textContent === "非表示"){
