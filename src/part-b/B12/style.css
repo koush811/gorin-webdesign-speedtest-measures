@@ -1,0 +1,52 @@
+body{
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 30%,70%;
+}
+
+aside{
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-right: solid 1px black;
+    background-color: rgb(209, 212, 216);
+}
+
+.link{
+    text-align: center;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.click{
+    color: blue;
+    text-decoration: underline;
+    background-color: rgb(180, 181, 184);
+}
+
+.main{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section{
+    transition: .2s;
+    margin-bottom: 300px;
+    
+}
+
+html {
+  scroll-behavior: smooth;
+}
