@@ -1,0 +1,27 @@
+.cir{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation:  cir 5s infinite;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes cir{
+    0%{
+        transform: rotate(0deg);
+        background-image: linear-gradient(red, orange);
+    }
+    50%{
+        transform: rotate(180deg);
+        background-image: linear-gradient(blue, aqua);
+    }100%{
+        transform: rotate(360deg);
+        background-image: linear-gradient(red, orange);
+    }
+}

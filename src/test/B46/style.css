@@ -1,0 +1,42 @@
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 200px;
+}
+
+.card{
+    width: 50px;
+    height: 100px;
+    transition: .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.view{
+    padding: 20px;
+    border: solid 3px rgb(0, 0, 0);
+}

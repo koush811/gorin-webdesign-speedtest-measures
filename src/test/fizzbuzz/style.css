@@ -1,0 +1,19 @@
+p{
+    counter-increment: num;
+}
+
+p::before{
+    content: counter(num);
+}
+
+p:nth-child(3n)::before{
+    content: "Fizz";
+}
+
+p:nth-child(5n)::before{
+    content: "Buzz";
+}
+
+p:nth-child(15n)::before{
+    content: "FizzBuzz";
+}

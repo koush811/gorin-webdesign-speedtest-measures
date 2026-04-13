@@ -1,0 +1,21 @@
+li{
+    counter-increment: num;
+}
+li::before{
+    content: counter(num);
+}
+.reset{
+    counter-increment: num2;
+}
+
+.reset::before{
+    content: counter(num)"."counter(num2);
+}
+
+.reset-two{
+    counter-increment: num3;
+}
+
+.reset-two::before{
+    content: counter(num)"."counter(num2)"-"counter(num3);
+}
