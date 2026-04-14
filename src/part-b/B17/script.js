@@ -7,7 +7,6 @@ const ctx = canvas.getContext('2d')
 
 console.log(weight.value)
 
-
 canvas.width = 500
 canvas.height = 300
 
