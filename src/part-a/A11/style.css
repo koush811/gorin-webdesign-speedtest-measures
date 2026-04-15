@@ -1,63 +1,68 @@
 body{
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
-    display: grid;
-    grid-template-rows: 10% 80% 10%;
-    grid-template-columns: 200px minmax(0,1fr) 200px;
 }
 
-header{
-    grid-row: 1/2;
-    grid-column: 1/4;
+*{
+    box-sizing: border-box;
+}
+
+header, footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    height: 100%;
+    display: flex;
+    flex: 1;
 }
 
 nav{
-    grid-row: 2/3;
-    grid-column: 1/2;
+    border-right: solid 1px black;
+    flex: 0 0 200px;
+    /* flex: flex-grow: 0 (余白があっても広がらない) ,
+             flex-shrink: 0 (狭くなっても縮まない)
+             flex-basis: (200px 基準サイズを200pxにする) ;*/
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main{
-    grid-row: 2/3;
-    grid-column: 2/3;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 aside{
-    grid-row: 2/3;
-    grid-column: 3/4;
-}
-
-footer{
-    grid-row: 3/4;
-    grid-column: 1/4;
+    border-left: solid 1px black;
+    flex: 0 0 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
+  .center{
+    display: flex;
+    flex-direction: column;
+  }
+  nav,main,aside{
+    border: none;
     width: 100%;
-    height: auto;
-    min-height: 100vh;
-  }
-  header{
-    grid-row: 1;
-    grid-column: 1;
-  }
-  nav{
-    grid-row: 2;
-    grid-column: 1;
-  }
-  main{
-    grid-row: 3;
-    grid-column: 1;
-  }
-  aside{
-    grid-row: 4;
-    grid-column: 1;
-  }
-  footer{
-    grid-row: 5;
-    grid-column: 1;
   }
 }

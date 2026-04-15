@@ -1,0 +1,22 @@
+.li{
+    display: flex;
+    margin-top: 5px;
+}
+
+input{
+    appearance: none;
+}
+
+.li label::before{
+    content: "✓";
+    transition: .3s;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.li input:checked + label::before{
+    content: "✓";
+    background-color: rgb(0, 107, 201);
+    color: white;
+}
+
