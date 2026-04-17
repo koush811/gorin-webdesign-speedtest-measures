@@ -1,0 +1,38 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+body{
+    margin: 0;
+}
+
+@keyframes nav{
+    from{
+        background-color: transparent;
+        box-shadow: none;
+    }to{
+        background-color: gray;
+        box-shadow: 0 2px 8px rgb(0,0,0,0.3);
+    }
+}
+
+header{
+    position: sticky;
+    top: 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    animation: nav linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0px 50px;
+}
+
+
+.section{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
