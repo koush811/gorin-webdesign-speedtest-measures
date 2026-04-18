@@ -2,7 +2,7 @@
   $file = "items.csv";
   $items = [];
 
-  if(($handle = fopen($file,'r'))!== false){
+  if(($handle = fopen($file,'r'))!==false){
     while(($row = fgetcsv($handle)) !==false){
       $items[] = $row;
     }
@@ -23,7 +23,6 @@
   $currentitems = array_slice($items,$start,$perPage);  //$startから$perPageまで
 ?>
 
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -36,18 +35,18 @@
   <?php foreach($currentitems as $item): ?>
     <div><?= htmlspecialchars($item[0]) ?></div>
     <div><?= htmlspecialchars($item[1]) ?></div>
-  <?php endforeach ?>
+  <?php endforeach; ?>
 
   <?php if($page > 1): ?>
-    <a href="?page=<?= $page -1 ?>">前へ</a>
-  <?php endif ?>
+    <a href="?page=<?= $page - 1 ?>">前へ</a>
+  <?php endif; ?>
 
-  <?php for($i = 0; $i <= $totalpage; $i++): ?>
+  <?php for($i = 1; $i <= $totalpage; $i++): ?>
     <a href="?page=<?= $i ?>"><?= $i ?></a>
-  <? endfor ?>
+  <? endfor; ?>
 
   <?php if($page < $totalpage): ?>
-    <a href="?page<?= $page + 1 ?>">次へ</a>
+    <a href="?page=<?= $page + 1 ?>">次へ</a>
   <?php endif; ?>
 </body>
 </html>
