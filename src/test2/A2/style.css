@@ -1,0 +1,30 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+    
+@media screen and (max-width:1024px) {
+    body{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:430px) {
+        body{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
+.card:hover{
+    background-color: gray;
+}
+
+.img{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}

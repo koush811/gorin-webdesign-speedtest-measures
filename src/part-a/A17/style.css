@@ -1,0 +1,58 @@
+.graph{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bar{
+    color: white;
+    text-align: center;
+}
+
+.bar:nth-child(1){
+    background-color: red;
+    animation: one 1s ;
+    width: 100px;
+}
+
+.bar:nth-child(2){
+    background-color: yellow;
+    animation: two 1s;
+    width: 300px;
+    color: black;
+    animation-delay: .2s;
+}
+
+.bar:nth-child(3){
+    background-color: green;
+    animation: three 1s;
+    width: 800px;
+    animation-delay: .4s;
+}
+
+@keyframes one{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+@keyframes two{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 300px;
+    }
+}
+
+@keyframes three{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 800px;
+    }
+}

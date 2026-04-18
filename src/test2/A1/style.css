@@ -1,0 +1,21 @@
+.tab-content{
+    display: none;
+}
+
+
+input{
+    display: none;
+}
+
+#one:checked ~ .tab-one,
+#two:checked ~ .tab-two,
+#three:checked ~ .tab-three{
+    display: block;
+}
+
+#one:checked ~ .label-one h2,
+#two:checked ~ .label-two h2,
+#three:checked ~ .label-three h2{
+    background-color: gray;
+}
+

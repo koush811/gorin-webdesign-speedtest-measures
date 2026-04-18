@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.cir{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: cir 1s infinite;
+}
+
+@keyframes cir{
+    0%{
+        background: linear-gradient(red,orange);
+        transform: rotate(0deg);
+    }
+    50%{
+        background: linear-gradient(blue, rgb(0, 195, 255));
+        transform: rotate(180deg);
+    }
+    100%{
+        background: linear-gradient(red,orange);
+        transform: rotate(360deg);
+    }
+}
