@@ -1,6 +1,14 @@
 <?php
+  $file = "test.csv";
+  $items = [];
 
+  if(($handle = fopen($file,"r"))!==false){
+    while(($row = fgetcsv($handle)) !== false){
+      $items[] = $row;
+    }
+  }
 
+  
 
 ?>
 
@@ -13,6 +21,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <table>
+    <tr>
+      <?php foreach($items as $item): ?>
+        <th><?= htmlspecialchars($item[0]) ?></th>
+      <?php endforeach; ?>
+    </tr>
+    <tr>
+      <?php foreach($items as $item): ?>
+        <td><?= htmlspecialchars($item[1]) ?></td>
+      <?php endforeach ?>
+    </tr>
+  </table>
 </body>
 </html>
