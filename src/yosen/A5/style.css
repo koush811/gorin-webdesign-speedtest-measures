@@ -1,0 +1,5 @@
+.back{
+    width: 80%;
+    height: 300px;
+    background: repeating-linear-gradient(45deg, green,green 10px,white 10px ,white 20px);
+}

@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.lines{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.line{
+    width: 5px;
+    height: 50px;
+    transform-origin: bottom;
+    transform: scaleY(0);
+}
+
+.one{
+    background-color: red;
+    animation: move 5s infinite;
+}
+
+.two{
+    background-color: yellow;
+    animation: move 5s infinite;
+    animation-delay: .5s;
+}
+
+.three{
+    background-color: yellowgreen;
+    animation: move 5s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes move{
+    0%{
+        transform: scaleY(0);     
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(0);
+    }
+
+}
