@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.object{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.box{
+    background-color: red;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 0;
+}
+
+.cir{
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: red;
+    bottom: 60%;
+    transform: translate(-25%,0%);
+}

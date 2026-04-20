@@ -8,7 +8,7 @@
     }
   }
 
-  
+
 
 ?>
 
@@ -25,12 +25,12 @@
     <tr>
       <?php foreach($items as $item): ?>
         <th><?= htmlspecialchars($item[0]) ?></th>
-      <?php endforeach; ?>
+      <?php endforeach;?>
     </tr>
     <tr>
       <?php foreach($items as $item): ?>
         <td><?= htmlspecialchars($item[1]) ?></td>
-      <?php endforeach ?>
+      <?php endforeach;?>
     </tr>
   </table>
 </body>
