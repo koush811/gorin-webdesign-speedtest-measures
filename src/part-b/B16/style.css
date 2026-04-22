@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    gap: 30px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
