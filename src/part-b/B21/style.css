@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    gap: 30px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+.move{
+    animation: move .5s forwards;
+}
+
+@keyframes move{
+    from{
+        transform: translateY(-50px);
+        background-color: gray;
+    }to{
+        transform: translateY(0);
+        background-color: orange;
+    }
+}
