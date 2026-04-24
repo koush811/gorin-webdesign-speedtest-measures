@@ -2,6 +2,8 @@ const display = document.getElementById('display')
 const start = document.getElementById('start')
 const stopbtn = document.getElementById('stop')
 const reset = document.getElementById('reset')
+const rap = document.getElementById('rap')
+const rapList = document.getElementById('rap-list')
 
 let isStart = false
 let startTime = 0
@@ -41,4 +43,11 @@ reset.addEventListener('click',()=>{
     isStart = false
     time = 0
     display.textContent = "00:00:00:000"
+})
+
+rap.addEventListener("click",()=>{
+        const li = document.createElement("li")
+        li.textContent = display.textContent
+        rapList.appendChild(li)
+   
 })
