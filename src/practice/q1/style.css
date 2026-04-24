@@ -1,0 +1,34 @@
+input{
+    display: none;
+}
+
+#tab-one:checked + label{
+    color: blue;
+    text-decoration: underline;
+}
+
+#tab-two:checked + label{
+    color: blue;
+    text-decoration: underline;
+}
+
+#tab-three:checked + label{
+    color: blue;
+    text-decoration: underline;
+}
+
+.contents .content{
+    display: none;
+}
+
+#tab-one:checked ~ .contents .content-one{
+    display: block;
+}
+
+#tab-two:checked ~ .contents .content-two{
+    display: block;
+}
+
+#tab-three:checked ~ .contents .content-three{
+    display: block;
+}
