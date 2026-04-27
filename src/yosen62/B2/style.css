@@ -1,0 +1,52 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+}
+
+.lines{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.line{
+    width: 20%;
+    height: 5px;
+    background-color: black;
+    animation: move 1s infinite;
+}
+
+.two{
+    animation-delay: .2s;
+}
+
+.three{
+    animation-delay: .4s;
+}
+
+.four{
+    animation-delay: .6s;
+}
+
+.five{
+    animation-delay: .8s;
+}
+
+@keyframes move{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+.cells{
+    display: grid;
+    grid-template-columns: repeat(16,10px);
+}
+
+
+.cell{
+    width: 10px;
+    height: 10px;
+    border: solid 1px black;
+}
+
+.active{
+    background-color: yellow;
+}

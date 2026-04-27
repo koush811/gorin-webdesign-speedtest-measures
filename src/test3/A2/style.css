@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    display: none;
+}
+
+label{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.line{
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+}
+
+.line:nth-child(1){
+    top: 0;
+}
+
+.line:nth-child(2){
+    top: 50%;
+}
+
+.line:nth-child(3){
+    top: 100%;
+}
+
+#input:checked + label .line:nth-child(1){
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+
+#input:checked + label .line:nth-child(2){
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+
+#input:checked + label .line:nth-child(3){
+    transform: rotate(45deg);
+    top: 50%;
+}

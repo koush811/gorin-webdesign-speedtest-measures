@@ -18,7 +18,7 @@ start.addEventListener('click',()=>{
         time = Date.now() - startTime
 
         const ms = time % 1000
-        const totalseconds = Math.floor( time /1000)
+        const totalseconds = Math.floor( time / 1000)
         const second = totalseconds % 60
         const totalminute = Math.floor( totalseconds /60 )
         const minute = totalminute % 60
@@ -46,8 +46,7 @@ reset.addEventListener('click',()=>{
 })
 
 rap.addEventListener("click",()=>{
-        const li = document.createElement("li")
-        li.textContent = display.textContent
-        rapList.appendChild(li)
-   
+    const li = document.createElement("li")
+    li.textContent = display.textContent
+    rapList.appendChild(li)
 })

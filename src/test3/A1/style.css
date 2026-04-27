@@ -1,0 +1,31 @@
+body{
+    height: 100vh;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lines{
+    display: flex;
+    gap: 5px;
+    width: 0px;
+    overflow: hidden;
+    animation: sweep 2s steps(6,end) infinite;
+    
+    white-space: nowrap;
+}
+
+.line{
+    display: inline-block;
+    flex: 0 0 45px;
+    height: 5px;
+    background-color: black;
+    vertical-align: middle;
+}
+
+@keyframes sweep{
+    to{
+        width: 300px;
+    }
+}
