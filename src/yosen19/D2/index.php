@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     } else {
         try {
             $pdo = new PDO(
-                "mysql:host=mariadb;dbname=userinfo;charset=utf8mb4",
+                "mysql:host=mariadb;dbname=app;charset=utf8mb4",
                 "app",
                 "app",
                 [
