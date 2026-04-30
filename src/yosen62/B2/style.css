@@ -1,0 +1,35 @@
+.items{
+    display: grid;
+    grid-template-columns: repeat(5, 48px);
+    grid-template-rows: repeat(3, 48px);
+    gap: 10px;
+    width: max-content;
+}
+
+.item{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+}
+
+.item:nth-child(2n){
+    background-color: #2d9cdb;
+}
+
+.item:nth-child(3n){
+    background-color: #0062a8;
+}
+
+.item:nth-child(4n){
+    background-color: #11819a;
+}
+
+.item:nth-child(5n){
+    background-color: #00186f;
+}

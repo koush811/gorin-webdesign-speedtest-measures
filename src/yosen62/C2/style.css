@@ -1,0 +1,11 @@
+.step{
+    display: none;
+}
+
+.finish{
+    display: none;
+}
+
+.active{
+    display: block;
+}
