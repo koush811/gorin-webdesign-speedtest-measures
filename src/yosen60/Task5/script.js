@@ -1,7 +1,6 @@
 const items = document.getElementById('items')
 const btns = document.querySelectorAll('.colorbtn')
 
-
 let colorid = "red"
 
 for(i = 0;i<256;i++){
