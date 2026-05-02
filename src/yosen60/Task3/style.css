@@ -1,0 +1,10 @@
+.cir{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: radial-gradient(white 55%,transparent 55%), conic-gradient(blue 65%,gray 65% 100%);
+}
+
