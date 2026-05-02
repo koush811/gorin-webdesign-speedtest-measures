@@ -1,0 +1,20 @@
+body{
+    max-height: 100vh;
+    height: 100vh;
+}
+
+.wrap{
+    background-color: rgba(128, 128, 128, 0.369);
+}
+
+input{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+dialog{
+    display: none;
+}
