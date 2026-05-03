@@ -1,0 +1,9 @@
+a[href^="web"] {
+  color: red;
+}
+
+a[href^="design"] {
+  color: blue;
+}
+
+a { text-decoration: none; }

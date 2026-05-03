@@ -1,0 +1,7 @@
+.box{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0,0 100%,100% 100%);
+}
+
