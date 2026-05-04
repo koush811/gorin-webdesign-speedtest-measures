@@ -1,0 +1,24 @@
+.graph{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(black 0% 70% , gray 70% 100%);
+}
+
+.text{
+    position: absolute;
+    
+}
+
+.right{
+    top: 40%;
+    right: 20%;
+    color: white;
+}
+
+.left{
+    top: 20%;
+    left: 20%;
+    color: black;
+}
