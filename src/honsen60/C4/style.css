@@ -1,0 +1,16 @@
+#watch{
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.hari{
+    height: 50px;
+    width: 2px;
+    position: absolute;
+    background-color: black;
+    left: 50%;
+    transform-origin: 50% 100%;
+}
