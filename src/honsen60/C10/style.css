@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: blue;
+    height: 100vh;
+}
+
+.items{
+    display: flex;
+    gap: 5px;
+}
+
+.cir{
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    animation: move 2s infinite;
+}
+
+.cir:nth-child(2){
+    animation-delay: .2s;
+}
+
+.cir:nth-child(3){
+    animation-delay: .4s;
+}
+
+@keyframes move{
+    0%{
+        transform: scale(1);
+    }40%{
+        transform: scale(1.4);
+    }80%{
+        transform: scale(1);
+    }
+}
