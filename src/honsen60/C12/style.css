@@ -1,0 +1,38 @@
+.items{
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+}
+
+
+.item{
+    width: 10px;
+    height: 10px;
+    border: solid 1px black;
+}
+
+.picks{
+    display: flex;
+}
+
+.pick{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pick:nth-child(1){
+    background-color: black;
+}
+
+.pick:nth-child(2){
+    background-color: red;
+}
+
+.pick:nth-child(3){
+    background-color: orange;
+}
+
+.pick.selected{
+    border: 3px solid yellow;
+}

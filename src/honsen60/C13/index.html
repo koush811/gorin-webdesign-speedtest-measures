@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+        }
+        #wrap{
+            background-color: rgba(0, 0, 0, 0.25);
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        dialog{
+            position: absolute;
+            top: 50%;
+            z-index: 100;
+            transform: translateY(-50%);
+            width: min(90%, 340px);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap"></div>
+    <button id="open">Click</button>
+    <dialog>
+        <h2>モーダルウィンドウ</h2>
+        <button id="close">閉じる</button>
+    </dialog>
+
+</body>
+<script src="script.js"></script>
+</html>
