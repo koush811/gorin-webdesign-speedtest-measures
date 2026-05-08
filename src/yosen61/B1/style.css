@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    gap: 5px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:active{
+    background-color: yellow;
+    border: solid 2px black;
+}

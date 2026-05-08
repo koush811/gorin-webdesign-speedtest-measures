@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .content{
+            perspective: 1000px;
+        }
+
+        .content{
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .content:hover .front{
+            transform: rotateY(180deg);
+        }
+
+        .content:hover .back{
+            transform: rotateY(0deg);
+        }
+
+        .card{
+            width: 80px;
+            height: 100px;
+            border-radius: 10px;
+            border: solid 1px black;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            transition: 1s;
+            
+        }
+
+        .front{
+            z-index: 2;
+            position: relative;
+            background: linear-gradient(180deg,red,orange);
+        }
+
+        .back{
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateY(180deg);
+            background: linear-gradient(0deg,red,orange);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="front card">
+            <h2>Front</h2>
+        </div>
+        <div class="back card">
+            <h2>Back</h2>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,112 @@
+.box{
+    width: 150px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.red{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    animation: liR 8s infinite;
+}
+
+.yellow{
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    animation: liY 8s infinite;
+}
+
+.green{
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+    animation: liG 8s infinite;
+}
+
+@keyframes liG{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }50.1%{
+        opacity: .2;
+    }100%{
+        opacity: .2;
+    }
+}
+
+@keyframes liY{
+    0%{
+        opacity: .2;
+    }
+    50%{
+        opacity: .2;
+    }50.1%{
+        opacity: 1;
+    }62.5%{
+        opacity: 1;
+    }62.6%{
+        opacity: .2;
+    }
+    100%{
+        opacity: .2;
+    }
+}
+
+@keyframes liR{
+    0%{
+        opacity: .2;
+    }
+    62.5%{
+        opacity: .2;
+    }62.6%{
+        opacity: 1;
+    }100%{
+        opacity: 1;
+    }
+}
+
+.boxs{
+    margin-top: 20px;
+    grid-template-columns: repeat(11,30px);
+    display: grid;
+    background-color: black;
+}
+
+.boxs div{
+    width: 30px;
+    height: 30px;
+}
+
+.boxs div:nth-child(2n+1){
+    background-color: palevioletred;
+    animation:  one 5s infinite;
+}
+
+.boxs div:nth-child(2n){
+    background-color: black;
+}
+
+@keyframes one{
+    0%{
+        
+        transform: rotate(0deg);
+    }50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
