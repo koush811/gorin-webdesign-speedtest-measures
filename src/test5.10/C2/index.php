@@ -25,9 +25,9 @@
     </form>
     <?php if(isset($inputPass)): ?>
     <?php if(password_verify($inputPass, $hashed)): ?>
-        <div>ログイン成功</div>
+        <div style="color: green;">一致</div>
     <?php else: ?>
-        <div>ログイン失敗</div>
+        <div style="color: red;">不一致</div>
     <?php endif ?>
     <?php endif ?>
 </body>
