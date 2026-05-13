@@ -14,24 +14,26 @@ startbtn.addEventListener('click',()=>{
     }
     if(time === "")return
     if(isStart) return
+    isStart = true
+
 
     timeID = setInterval(()=>{
-        if(isStart) return
+        
         display.textContent = `${time}秒`
         time-=1
 
         if(time < 0){
             clearInterval(timeID)
             display.textContent = "FINISH!"
+            isStop = false
+            isStart = false
         }
 
         stopbtn.addEventListener('click',()=>{
             isStart = false
-            clearInterval(timeID)
             isStop = true
+            clearInterval(timeID)
         })
-
-        
 
     },1000)
 })
