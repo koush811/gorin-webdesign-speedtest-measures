@@ -1,0 +1,35 @@
+input{
+    display: none;
+}
+
+.items{
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+    width: 100%;
+    background-color: rgb(65,65,65,0.5);
+}
+
+.text{
+    max-height: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+input:checked ~ .text{
+    max-height: 30px;
+}
+
+label::before{
+    content: "▶";
+    
+}
+
+input:checked + label::before{
+    content: "▶";
+    display: inline-block;
+    transform: rotate(90deg);
+}

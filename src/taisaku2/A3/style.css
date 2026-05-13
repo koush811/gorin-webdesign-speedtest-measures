@@ -1,0 +1,32 @@
+input{
+    display: none;
+}
+
+.content{
+    display: none;
+}
+
+#input1:checked ~ .content1{
+    display: block;
+}
+
+#input2:checked ~ .content2{
+    display: block;
+}
+
+#input3:checked ~ .content3{
+    display: block;
+}
+
+#input1:checked ~ #label1{
+    background-color: yellow;
+}
+
+#input2:checked ~ #label2{
+    background-color: yellow;
+}
+
+#input3:checked ~ #label3{
+    background-color: yellow;
+}
+

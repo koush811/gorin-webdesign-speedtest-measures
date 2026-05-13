@@ -1,0 +1,22 @@
+.item{
+    width: 300px;
+    height: 400px;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    transition: .2s;
+    box-shadow: rgba(97, 97, 97, 0.514) 2px 2px 2px 2px;
+}
+
+.img{
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+}
+
+.item:hover{
+    translate: 0px -2px;
+}
