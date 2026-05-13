@@ -1,10 +1,26 @@
 body{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    margin: 0;
+    gap: 50px;
+    align-items: center;
 }
 
 .box{
     width: 300px;
     height: 500px;
+    opacity: 0;
+    background-color: gray;
+    transform: translateY(20px);
+    transition: opacity .4s ease, transform .4s ease;
+
+}
+
+.box:nth-child(2n){
+    background-color: rgb(177, 177, 177);
+}
+
+.show{
+    opacity: 1;
+    transform: translateY(0);
 }

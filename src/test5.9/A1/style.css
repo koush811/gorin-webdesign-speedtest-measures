@@ -1,6 +1,6 @@
 .cir{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    background: conic-gradient(blue 0% 70% , red 70% 90%,green 90% 100%) ;
+    background: conic-gradient(blue 0% 70%,green 70% 90% ,red 90% 100%);
 }
