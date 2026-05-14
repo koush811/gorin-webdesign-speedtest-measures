@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    dialog.active{
+        display: block;
+        z-index: 10;
+    }
+
+    #wrap.active{
+        display: block;
+        z-index: 1;
+    }
+
+    #wrap{
+        background-color: rgba(0, 0, 0, 0.355);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        
+        top: 0;
+        left: 0;
+        display: none;
+    }
+</style>
+<body>
+    <button id="open">OPEN</button>
+    <dialog>
+        <h2>WINDOW</h2>
+    </dialog>
+    <div id="wrap"></div>
+</body>
+<script src="script.js"></script>
+</html>

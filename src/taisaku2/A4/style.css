@@ -1,0 +1,23 @@
+.cir{
+    width: 100px;
+    height: 100px;
+    border: solid 10px lightgray;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.line{
+    width: 100px;
+    height: 100px;
+    border: solid 10px rgb(65,65,65);
+    border-radius: 50%;
+    border-left: solid 10px transparent;
+    position: absolute;
+    animation: move 2s infinite linear;
+}
+
+@keyframes move {
+    to{
+        transform: rotate(360deg);
+    }
+}

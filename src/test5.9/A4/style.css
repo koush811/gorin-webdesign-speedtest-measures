@@ -1,0 +1,81 @@
+.sin{
+    width: 500px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cir{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.red{
+    background-color: red;
+    animation: red 8s infinite;
+}
+
+.yellow{
+    background-color: yellow;
+    animation: yellow 8s infinite;
+}
+
+.green{
+    background-color: green;
+    animation: green 8s infinite;
+}
+
+@keyframes green{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    50.1%{
+        opacity: .2;
+    }
+    100%{
+        opacity: .2;
+    }
+}
+
+@keyframes yellow{
+    0%{
+        opacity: .2;
+    }
+    50%{
+        opacity: .2;
+    }
+    50.1%{
+        opacity: 1;
+    }
+    62.5%{
+        opacity: 1;
+    }
+    62.6%{
+        opacity: .2;
+    }
+    100%{
+        opacity: .2;
+    }
+}
+
+@keyframes red{
+    0%{
+        opacity: .2;
+    }
+    62.5%{
+        opacity: .2;
+    }
+    62.6%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
